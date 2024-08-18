@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Project Title</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/he/1.2.0/he.js" integrity="sha512-o4gKX6jcK0rdciOZ9X8COYkV9gviTJAbYEVW8aC3OgIRuaKDmcT9/OFXBVzHSSOxiTjsTktqrUvCUrHkQHSn9Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <style>
+    body{
+      background-image: url('data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHCBUVFRgVFhUYGBgYGBgYGBgYGBgYGBgYGBgaGhgYGBgcIS4lHCErIRgYJjgmKy8xNTU1GiQ7QDszPy40NTEBDAwMEA8QHhISHz8sJSs0Nj43MTc0NDQ3NzQ2NDQ0MTQ0Oj80NDQ0NDQxNjY0NDE0NDQ9NDQ0NDQ0NDQ1NDQ0NP/AABEIAMIBAwMBIgACEQEDEQH/xAAbAAACAwEBAQAAAAAAAAAAAAABAgADBAUGB//EAD8QAAIBAgQCCAMFBwMEAwAAAAECAAMRBBIhMQVBBhMiMlFhcYFCkaEHFFKCsRUjYnLB0fAzQ+FzkqKyU8LS/8QAGQEBAAMBAQAAAAAAAAAAAAAAAAECAwQF/8QAKxEBAQACAQMDAgUFAQAAAAAAAAECEQMSITFBUWETIgRxgZGxMkKh0fAz/9oADAMBAAIRAxEAPwD5lCIJJIZTLFMqWWrAcGMpn0XoF0bwWIwzNiAHqO7Ws7K1NUOUWynQkgnXcED1HGvsxqJd8LUFVf8A43Ko/s+it75ZG06fPwY6mXYzAVKL5KqOjfhdSp9RfceY0lQElBwZYDKgI4gXBo6mUiOpkJXKZasoBjhoGgWjraZg8cVIGkWjC0zh4c0DRcSEiUB5LwL7iAsJTmgvAtzQF4kFoD54peCCEIXgLTZiqNHDgHEuwci64emA1a3IvfSn73PlO90KHD8StRnpshByBKlUsw0vm7Cpa9/PaTZqd1Znu6jyLNK2M9h0q6OYeioqUcQouwXJUdBuCey5I8Nj855Gvh3UXI7J+JSGU/mUkfWTMbZvRc8ZdW91TGVsYSZWTIWHNJEkgcaSSQQGWWCIstWBKVWpTbPTdkb+E/qNp6/gv2k4mjYVlzqPiXQ+4/5nkhGsJGkyvtXDumGAx6dXUyNfdKijQ+h2PnMPFPs5w9S74aoaZ/A5LofIN3l/8vSfIHwqnXY+I0I9DOvwrpHjcMRkql1HwPr8jvI1TbocY6M4nDXNWkcn407aeuYd381jOTPofBPtUpNZMShpnYtuh8deU5fTqpgHKPhioqP2nVLZChB7RA0Vr22te53tJ2aeSEYRBGEIOI4ErEsEBgI4iRhAcCNEAjLCTgiG8EkBrxbyEyQDATDBrAgBO014nF/dTkQBsUe8xsVwoPIcjV/9dt9g1c4ZFdbGvUBNEH/bTY1yPxHUJ7t4Tl0KWUeJOpJ1JPMky/ifLD/0vx/KunhrEuxLO1yzMbsSdyTONicI+clWK38CR+k7xMrZZRtO3h0vs5fD9c9DFrnZwOrZ2NgPiCncGdzpvwejgilSi91qMUNNzmPdLb7smliDe1wRra3h8Vh81iDlZTdWGhB9Zlx7VGAeo7Ow0uxvYeA8JbG2XcUzwmUu462No5HK620I/lYBlv7ETM038YPbX/pUSfems5rGTnJMrpXhtvHLfZJIt5JVq5UgkvIIDLLAZWI6wLFMcGViMsC0RxK1jgQCyAw0aSqLKAL66SCMGgWrHWVAyxTIFgMsEpBjAwLbxgZUDGBgW5oQZTeEQLrwhpReNeErs0BMrzSEwg+aa8DSQ56lS/VUgGe27kmyUlPi508hmPKYC01cW7OTDA/6Zz1v4q7DVfyLZfXN4y2M/urLktusZ5v8Mj1nqO1V7Z3NzbQKNlRRyUAAAeAgJggJkW7aSSTUQtFJgJikyEoTMePFwB4sB85qLSzhtIPiaSt3VbO/8iDO30Uy2M3lIpndY2+0Xcc0ruo+AInuiIh+qmc0mWVq5dmdt3ZnPqxJP6ysmMrvK04prCT4C8kW8khdzYRFvCIDiOIMPSd2VEVndjZVUEsxOwAG5hdGU5WVlI3VgVI9QdRAYR1mrhPCa2JLCimcrbN2lW2a+XvEb2PymRWvAtEYGVCMsC4GGX1eG10pLXak4pN3HKnIbkga+x3m3DdHMQ+GfFKn7pLkljlJULmLoD3lHl46AyBzRHQz0fFMTiX4bhc/VHDh2VMoPWBkLoM99LWDai17i9zHfo+cRRwNTDhQ1bNQcaAh0Z81Q23GVWJO9lXe+gecDQhp67j3BcM+E+8YPtHDuKeIZS+V7ICzqGvsWXXTQtvaeOVoHsOhmMw2enRqYZXqO7J1jEMtn2zIwIJFrC3iffVUoYXE1Hwwprh8SmdKYTKKT1EZt3Auc2UDtDnprPG4LFmlUSoN0dHFv4GDW+k930i4dSoYupjHqUwAVqUqF/3lSqFUgMo7qZwGJ5gnaB4irTKMyMLMjMrDwZSQR8wYoaCpULMWY3ZiWY+JJuT84t4FgaTNEDSXgPmkzRM0haB0OFsEL12FxQUOAdmqsbUV8+12iPBDOal9SxuzEsxO5JNyT7zVjGyUqVPYvfEP+bs0lPogLD/qStqaIA1ZxTBFwts1RhyIp6WHmxHvNvp2ySfq58cpu5X18Koplb8coDSnh2f+Ko7f+qZbfMyk8fbnhadvSp/+7x9PGea068r4jQTATM37ZpMe1TNM/wAJYj5OSfrLlYMLqwYeW/uIvDdbxu/yJyTxl2QmacF2KNetzfLh0/P2qhH5Vt+cTG7aae3qdps4uMnV4cf7KnP51nsz/Lsr+WRj2lv/AG1eX7rMPf8AhgimExCZm2SSCSBzpdRwzvqiO9iAcis1idgco0vKZ3Oh/SJsDiFqi5pt2KyA6Oh525st8w9x8RgX/Z8x/aGGKhmOc2C22KMCSSR2QCSdzpYAk2PVoHDnGcQ67C1cUFep1fVZ81PJVZLtZrhe0gv2rZdrGel4D0aTCYypjEC1MKtE1sMy2c9vL2UJsFIuwDH4T5kjy/2ZY4ffXV2VfvNGshJ2zvZ+f8r7wLfste9etRaxFTDMbnQBqbKVYnkO0xmDGdGAhwyU8SlV8S+VFRT2FzZc7kE89xYbN4G3V4NwtuE4mhWxTouZ3pFFId1psjjrWH4bhdr6HWx0mDiGBw+FqfecPjqFRlrCpRo00JNhUDBWIOVVUaX55bDfQO7+wMJWr1uHUKLLVo0mcYlnYl6qmmGQ0zpkOewJOmvqcn2bYei+IrYbEU0YunZFRFYq9JjmVcw0bVrj+A3hr9M8NTSo+Ewz0sViNalVmVlpsTduqvmzDNyyqDe/lOTjelJeumKShTp4hCS7oXy1CUyXZL2U2LXINzffSQPdftIYnHYrhuIOakxRaS2As1HK79oAEFgGPh2dLXlWJ6TpUxz4IkJhXpPhSCMirVcEFiCARZhkt535z5kuNcVTWVyjlnfMhykM98xW23eO3jKS199b731vA9rwmthqmD+4Yqt1D0cQzo+UspUmzqG2uSz7+IOoBjYfpamGo4jD4YOQWth6jlcyq6KKrEWt30LjTUvytYeIBjgwOrwfjdfDZxScBXsHR1V0cAEAMrDwY7WvM1eqHdnyKmY3yICEXyUEmw8pmUwgwLbx88mFwz1GyojO3giljqbXNthcgX85rPB8TnWl1D53UsqZTmZRe5A5jQwMoaEGNhcK9R1pot3ZsoUkL2vAlrAHTnEqIyMyMLMrFWB5MpIYH0IIgNeAmIHhvAcGFEzsqXtnZVv4ZiBc+A13lWaIQxDuB2UFr3A1e6C3Mm5vp+G8tjjb3norlZO19V3EOKhnZ6Yu7nsA7U0XspYfiyganb12wJg8xz1CXYm5v4/1j4ajlHmdzLy0vny3Lt6K8fFjjOyKgHKRgILwEzJorq4dW3AnPfCvTOZCdOX9p0byIpYhVF2YhVA3JOgAlsbZftVy1rv4bOA1FYHEsulHW3J6p/01t69ojwUzBmJJZjdiSSTuSdTLuPVsiph6RBWiS1QjZ6x75B5gd0el+cy0qwdQw9/WdOc68b7zz8ubi+3Lqvi+Pg5MQmQmKTOV1peGLeSBhJgvCTEMD0uB6X1qeAqYEC6uxAdjcpTcdtEHmbm99MzabGee9Z6X7OuHUcRjRSroHRqdU5SSLsFuCLcwM1vnynBx2G6urUp69io6a2v2HK9ojS+mtoCvVZjdmLHxYljuTufMk+5nY6O8F+8NUZ36ujQTrK1S2YhSbKqLzdiCBc20J1tY8/D8MruhdKLlFXMXynJl11DHRu6219jPafZjS+8UuIYW4/e0VKXBKhitVMxII5shtflpsYHmMYlKq6Jg6Vc9gAo4z1HdSxZwqX+HLoBYWMwurKSrKyspsVYFWUjcFTqD5Gev4P0Yx2ExWGZmWg9R8isGSqULoxs9MGxBAI3tfbUCcTH4OrUx7UKlUPVfECk9XLYFy4QuVA0A8PKQOUDrbnO1wrD4NsPXbEVqiV1/0URbq5Kmwbsn4hY6rp9PTdJeMDhrjCYREQhA71Cod8zuTYAkg9lEsXzHKR4yjoXiTiv2ilkNXEYfOoCqql0zqSBsCTUXXxJMDyvC+HVMTUFKkmZyL2uBZQQCxvyFxe02V+COtN6iOlQUiq1erJZaefRe2QFc3sCELW5z0vQ2j91DpjUNBMYmVHeyMFQjOrG+amHWoV1sez5gzpdJOEV3RaVOvg8LhNbUxWKqzA3JLGmM3dBt676WDz+P6Ls7YU4ZexiaCuLk5UdEvUztrlGl7nS5Il3SzgWGSlTxODcvRZnRzmzqHRsoZWOpUkML7d224l1TpIMPgnwikPWVqmHSsBdOoJuXT1Duo3PPYWPE4T0gq0KL0CiVaDnMyOrEX0F1YG690bcxeB6nFs+B4Zh6mHGVqvVvUq5FYjMrPlJK2FnKhWOvLkJwOD8TxNGpSxtQValJHZczlirBwVcIWNjy20uoGkxYDpBiaQdMPUdKbNfIO2EFyQqlgSNNLixNpRxXimIxBVq7u5QFULAAKGsWsAANbC/oPAQPVvxnhtKtUxdMValR2zpTqIoRGZ1ZyCeds9t7X0I3nK6c08uOreDlXG2zopG05vBOCVsU6oinKSAzlSURTe7E89jp42E6PTd8+McI2dUCUgd7ZEUEaed/cmBxOqa17cr7i9vG28rvNT4gd7W17213vfXl5X8hMmRvwn5GArvYeugmhKoNIU1Buzl28MiIcg9blj8pirAk5bG+1udz/hjsxVypBFlt4fEt/wBPrOvGTHht93NnOrkk9lhMF4t4M05HSYmDNFvBeSGvN1Op93p9b/u1FK0RzRDo9Xy5hfc8hMKqLF27i2za2zE7Ip8TY+gBPrnaozsXbc7DkoGgUDkALACTL091M8Oqa9PX5FV0meh2HK/C20vJmfFjQN+E3/vLceVxylMsZcdNDaQEwu1wD4iV3k8uOsrIcd3JTXkiQTNdnmvg3DXxNelh0IDVHCAkEhQdWYgbgAE+0xmauD8TfDV6eIpnt02zC4uLEFWBHmrMPeB7Xg/FeG4DEqKVDEYmqtRqZrkgdo3RuoohiGJuVF7G2x8bOlfAqNHilGpURkwmJdHYnsBHe+dWPwWbKxB5M3gbc7G9M8OrvWweBShWfN++Zi7pm0L007qMQTqvM85xsF0oxVKk9EVS9Nw4ZKt6gBcMGZcx0Y5ifC5va8gfUukGFfD1Ti+qrYqsGtQopTcYfDqSyoVyAhn7Qu29ydtJ5Po3xnE4GrSSthcgxOJzszKwchmVCKakgrlLfFc2a1t7+ZwnSjHU06tMVVVMuW1wSF8FYgstuRBBGlthMzcRqVaiPXq1KmV1OZ3dyq5gWy3NxtsLSR3OlGIfD8Vd871DQxCOhdyxyApVFME7KM2W206HH+M8Oc1MTh1rfeqro4z9kYZ1ynrEsCrMWQE6nvG1hecHpRxj73ialfKFDEKg5lE7Ks/ixGp9bcphoYGo/dRiPGxA+Z0kWyeU443K6k29Fi+mz1gnX4bC13QFesqUszsua9t7DS/K1ze24PPr9IMRVxH3guUfQIELIqKLdhFv2VsD2diTrvKBwaoNWKJ/M4/peIcNQAN6xJ/hQ29iTrK9Uvhp9HOeZr86tx+Oq1iXrOXcjLmbwuumw8D/AF1MoY2e23yHasbE+59o4fDgd2ox5ZmVQfkNPrHHEkXuUKY82Bc/M2i5X0hOPH+7KfySqd7AefI2Gu3+f3vSg7G6oSNdlJOxI1ttoB9IV45VtYBB6L/zEfitY/GR6BR/SRvL2/yt08M9bf0Xpw6rYWpm2YbgbEm+/kFk+4VbEdW2y8vK5ufUc5R+06w+M/JT/SV1MU7952I8Lm3y2idfroy+hrtvbv0OkmLw1D7srBANuypZMzF2ynbc8794+3HzljmJuSblrAkmwubkeN7zGTpFUy7G632a12X+Zf1eQnRjYaeQ+vjz3mWS8Ia8MgarY7AMx9EJNvkCPpMzXL38WJ5C/ty0t6/pTh6xCuQe92fa4v8AoIuvynTy3WGMYYTeVrVljBNJkStbeWpiVvYvl9QT+k526wraGhYsA2x58gObNzsPLU2iNiEOi5nPmMiDzNiSw8tJlr1jqgNye8ZrhhLOrLwpllf6Z5a+K4oVGVEAFKncILAFibF3bmSSBvewAHKZY1NABIwmdu7tOM6ZosVxcEQ3imQslHVB5QEw0e5+Y/rEJm3N6X4ZcXrPlLwxbyTFqzkwSGSBBHUXNhqfAb/KW4JqYa9QMyj4VsM3qbiw9J2x0myiyUFUAWHa29gB+splllO0m23HhhZvLLX6brHhuBVnGawQcy5I+QAN49LDYZCc9YuVPdRGAJ8M539rTFj8c9Zszn0UXCj0F9/OZxExyvm/sm58eN+2b+b/AKdteMoh/dYdF/iY3P8Af6yutx2u/wAQUeCqB9TczlQrE48fZF/EclmpdT47LHcsbkkk8zqZA0S8Il2Jy0EEIgMI+aVgw3kCzNJmld4bwHvJmiXkvAfNIz2BiXgYwK8NU7y+d5ovMDKQSRuNfaa8NXVhcjadUx+pjJ4s/wAsbejK30F9Yq0bnaX0sfQU3ZC/kGI+tjExXEGqaIi008FH6kkk+5lPp4437r+yerLL+mfuqq1MvZTc7mLSS3rIlMD+8e8pnn1fl7L446/M+aBmiRbyixryQXitEm+wsXRB5m8ql2I0yr4CUzbn7WT2jLi8W+9CSS8kxaqDBJeC8BoRFvCDAcQiIDCDAe8YGJeS8Cy8OaIBJAe8gMW8l4D5oc0UGS8B7w3ld4QYDgyXiAw3gPeAmAmSAt7OPPT+0ZEsrL5n6iJVW403Go9o6VNQeTC3uP8APpOrgylx6a5+WWXZEpgcpZA62Mk5ssbjdVvLLNxAZJJJCQIixosCXl+HS5zHZdZXSpljYCHE1BbIuw7x8TN+PGYzry8Tx+bLky39sVM9yT4wGCCY5ZXK7rSTU1BkkvJISzmCSCQDeEGKIwgMIRFjD/LyQVIPMfONPr3D/tIwBpoKtNVcKAy9UxAIFrAhSLT5v0nxyV8VWq0gAjsCgC5RYIq922lyCZGxX0eCnEIrqGBJFjqL5SRcc9p1+m2EVHR0UAMCrWFhdbZdudiflPN4WpkdH/C6n2vr9Lz23S2kHwwb8DK3z7P/ANphnbjyy+70ODGZ/hs56zu8KDDFEM6HniIbxbyCA4Ml4LwQHBkvEvDeA15M0W8hgNeJR3KnnqvkZIGQkjL3r6S/Hl05bVym8WilUDdltGGl4KlMruPflOnh6WHFmqUnqPbYVOrQf9q5m/7l9I+JqoxuiBBbu5mcfNtfrOjKY5Xv+7mmfT4v6f6ca8l5e+Kpg2dLHyNvrLqeNwYGqVCfKooH1QzK8M9LG05L7Vh1mzDcOdxnPZQbu2ijyv4+QufKXHj1NP8ASwyA/icmofkbJ81M52Mx9asbuxNthyA8FA0UeQtEnHh5uy3LLxNNGKxSKMlLXkznc+g5Dy+cwrpAq2hMpnyXK918cJBLQXkvBeUWS8kF5IFcEhgkAyCCMIDCERbwyQ0IiiGBGGk+g0j1+EI5vT/8sun1nz7NPQ8J6RpQoBCrM4JAUaC19Lsdva8w58blJcfMru/A8uOFymd1LHAVobxXe5Jta5Jt4XO0gM2cNNeQGKI0kGGLJAJhiGQGA8l4sF4D3m7AAZCeZa1/IDS3hre/t4Tn3mrhVUXKnnqP8/zlLYa6ptlzb6LpuyHYayBD4TZRQXllVBO3pePeXvpxOI0gbH2nPyCdbirqFVQbsSSfJRoB6k3+QnLvOPk11XT1+Df05sMsaLeCUbDeCAyEwDBJJeBJILyQKzBDIBIEkBktJaAbwiACEQCDGvFhgG8W0MIECSSSWkiCGSGBJJIIEvDBBAMMW8MCQNe9wbHxhkMDpYHjWUgVELAb5GCMfdlYD5GX47jqsuWlRKeL1H6x/YKqqPlOLJLdeWtbZfR4971Nmudybk7mCS8Eq1G8BMkkCSQSSAJLySQJJBaSAxkMkkAQSSQIIRJJAYSSSSQ0KwyQFjCSSBJBJJAkkkkBYTDJABkMMkCRZJIEMgkkgCESSQAZDvJJABgkkkCSSSQFkkkgf//Z');
+      background-repeat: no-repeat;
+      background-size: 100% 100vh;
+    }
+    #home, #form1, #form2, #form3, #form4{
+      display: none;
+      width: 50%;
+      margin: auto;
+      padding: 25px 50px;
+      background-color: rgba(0, 0, 0, 0.50);
+      margin-top: 50px !important;
+      color: white;
+    }
+    #home.active, #form1.active, #form2.active, #form3.active, #form4.active{
+        display: block;
+}
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" data-value="#form1" onclick="toggleform(event)">WebSiteName</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a data-value="#form1" onclick="toggleform(event)"><span class="glyphicon glyphicon-user"></span> Login</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+  
+<div class="container">
+    <form  method="post" action="{{ url_for('userlog')}}" id="form1" class="active">
+      <center><h2>User Login</h2></center>
+      <hr>
+      <div class="form-group">
+        <label for="username">Username:</label>
+        <input type="text" class="form-control" id="username" placeholder="Enter username" name="name">
+      </div>
+      <div class="form-group">
+        <label for="password">Password:</label>
+        <input type="password" class="form-control" id="password" placeholder="Enter password" name="password">
+      </div>
+      <button type="submit" class="btn btn-success">Submit</button></br></br>
+      <p>Click here to <a data-value="#form2" onclick="toggleform(event)">Sign up</a></p>
+    </form>
+
+    
+    <form method="post" action="{{ url_for('userreg')}}" id="form2">
+      <center><h2>User Regestration</h2></center>
+      <hr>
+      <div class="form-group">
+        <label for="username">Username:</label>
+        <input type="text" class="form-control" id="username" placeholder="Enter username" name="name">
+      </div>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+      </div>
+      <div class="form-group">
+        <label for="phone">Mobile No.:</label>
+        <input type="tel" class="form-control" id="phone" placeholder="Enter mobile number" name="phone">
+      </div>
+      <div class="form-group">
+        <label for="password">Password:</label>
+        <input type="password" class="form-control" id="password" placeholder="Enter password" name="password">
+      </div>
+      <button type="submit" class="btn btn-success">Submit</button></br></br>
+      <p>Click here to <a data-value="#form1" onclick="toggleform(event)">Sign in</a></p>
+    </form>
+
+</div>
+
+<script>
+    function toggleform(e) {
+    var Id =(e.target.getAttribute('data-value'))
+    let Items= ['#form1', '#form2'];
+    Items.map(function(item) {
+        if(Id === item ) {
+            $(item).addClass("active");
+        }
+        else {
+        $(item).removeClass("active");
+        }
+    })
+}
+
+</script>
+</body>
+</html>

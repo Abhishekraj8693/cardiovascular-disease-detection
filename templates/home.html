@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>VITAMIN DEFICIENCY</title>
+        <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.css"></link> -->
+        <!-- Favicon-->
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="http://127.0.0.1:5000/static/css/styles.css" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+            <div class="container">
+                <!-- <li class="nav-item"><a class="nav-link" href="#page-top">AUTISM</a></li> -->
+                <a class="navbar-brand h1" href="#page-top">VITAMIN DEFICIENCY</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars ms-1"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="#services">RECOGNITION</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#team">Team</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/logout">Logout</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Masthead-->
+        <header class="masthead">
+            <div class="container" style="background-color: rgba(0, 0, 0, 0.50);padding: 25px;">
+                <div class="masthead-subheading"> VITAMIN DEFICIENCY DETECTION USING CNN ALGORITHM</div>
+                <!-- <div class="masthead-heading text-uppercase">VITAMIN DEFICIENCY DETECTION</div> -->
+                <p>Vitamin deficiency anemia is a lack of healthy red blood cells caused by lower than usual amounts of vitamin B-12 and folate.
+
+                    This can happen if you don't eat enough foods containing vitamin B-12 and folate, or if your body has trouble absorbing or processing these vitamins.
+                    
+                    Without these nutrients, the body produces red blood cells that are too large and don't work properly. This reduces their ability to carry oxygen.
+                    
+                    Symptoms can include fatigue, shortness of breath and dizziness. Vitamin supplements, taken by pill or injection, can correct the deficiencies.</p>
+                    <br>
+                <a class="btn btn-primary btn-xl text-uppercase" href="#services">Recognition</a>
+            </div>
+        </header>
+        <!-- Services-->
+        <section class="page-section" id="services">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">vitamin Deficiency</h2>
+                </div>
+                <div class="row text-center">
+                    <div class="col-md-12"  id="pred">
+                        <span class="fa-stack fa-4x">
+                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                            <i class="fas fa-laptop fa-stack-1x fa-inverse"></i>
+                        </span>
+                        <h4 class="my-3">Input One</h4>
+                        <p class="text-muted">Vitamin Deficiency in selected image</p>
+                        <input type="button" value="Continue" data-value="#analyseimage" onclick="toggleform(event)" class="btn btn-info">
+                    </div>
+                    <!-- <div class="col-md-4" id="pred">
+                        <span class="fa-stack fa-4x">
+                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                            <i class="fas fa-laptop fa-stack-1x fa-inverse"></i>
+                        </span>
+                        <h4 class="my-3">Input Two</h4>
+                        <p class="text-muted">Emotion recognition in captured image</p>
+                        <input type="button" value="Continue" class="btn btn-info">
+                    </div>
+                    <div class="col-md-4"  id="pred">
+                        <span class="fa-stack fa-4x">
+                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                            <i class="fas fa-laptop fa-stack-1x fa-inverse"></i>
+                        </span>
+                        <h4 class="my-3">Input Three</h4>
+                        <p class="text-muted">Real time emotion recognition</p>
+                        <input type="button" value="Continue" class="btn btn-info">
+                    </div> -->
+                </div>
+            </div>
+        </section>
+
+        <section id="analyseimage">
+            <div class="container-fluid" id="grad1">
+                <div class="row justify-content-center">
+                    <div class="col-10 col-sm-10 col-md-10 col-lg-10 text-center ">
+                        <div class="card">
+                            <h2><strong>SELECT IMAGE TO VITAMIN DEFICIENCY</strong></h2>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <form id="msform" action="/image" method="post">
+                                        <!-- fieldsets -->
+                                        <fieldset>
+                                            <div class="form-card">
+                                                <input type="file" name="filename" class="form-control" id="">
+                                            </div>
+                                            <input type="submit" class="action-button" value="Analyse"/>
+                                        </fieldset>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Team-->
+        <section class="page-section bg-light" id="team">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">Our Amazing Team</h2>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4" id="pred">
+                        <div class="team-member">
+                            <img class="mx-auto rounded-circle" src="http://127.0.0.1:5000/static/img/1.jpg" alt="..." />
+                            <h4>SOMA SAHA</h4>
+                            <p class="text-muted">USN : 1BY19CS155</p>
+                            <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4" id="pred" >
+                        <div class="team-member">
+                            <img class="mx-auto rounded-circle" src="http://127.0.0.1:5000/static/img/3.jpg" alt="..." />
+                            <h4>VEERASAMY GEEREEDASSEN NAIKEN</h4>
+                            <p class="text-muted">USN : 1BY19CS213</p>
+                            <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4" id="pred">
+                        <div class="team-member">
+                            <img class="mx-auto rounded-circle" src="http://127.0.0.1:5000/static/img/4.jpg" alt="..." />
+                            <h4>SYEDA SAMIRA SAMA</h4>
+                            <p class="text-muted">USN : 1BY19CS166</p>
+                            <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="http://127.0.0.1:5000/static/js/scripts.js"></script>
+        
+    </body>
+</html>
